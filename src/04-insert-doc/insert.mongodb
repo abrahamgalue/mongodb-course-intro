@@ -1,0 +1,12 @@
+use("personal_store")
+
+db.products.insertOne({
+  _id: 1,
+  name: "Lenovo Yoga",
+  price: 1000
+})
+db.products.insertOne({
+  _id: 2,
+  name: "Lenovo IdeaPad",
+  price: 100
+})

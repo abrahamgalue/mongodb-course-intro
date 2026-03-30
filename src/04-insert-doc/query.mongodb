@@ -1,0 +1,3 @@
+use("personal_store")
+
+db.products.find()
