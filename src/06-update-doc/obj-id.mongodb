@@ -1,0 +1,12 @@
+use("personal_store");
+
+db.products.updateOne(
+  // filter
+  { _id: ObjectId("62f573dcab088f7ebb862f75") },
+  // update => aggregations pipeline
+  {
+    $inc: {
+      price: 100,
+    },
+  },
+);

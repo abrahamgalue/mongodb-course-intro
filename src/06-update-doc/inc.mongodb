@@ -1,0 +1,12 @@
+use("personal_store");
+
+db.products.updateOne(
+  // filter
+  { _id: 2 },
+  // update => aggregations pipeline
+  {
+    $inc: {
+      price: 100,
+    },
+  },
+);

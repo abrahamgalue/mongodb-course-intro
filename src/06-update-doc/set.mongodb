@@ -1,0 +1,14 @@
+use("personal_store");
+
+db.products.updateOne(
+  // filter
+  { _id: 2 },
+  // update => aggregations pipeline
+  {
+    $set: {
+      name: "Lenovo IdeaPad Slim 3",
+      price: 398,
+      tags: ["IdeaPad", "Slim", "Laptop"],
+    },
+  },
+);

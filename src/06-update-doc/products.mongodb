@@ -1,0 +1,32 @@
+use("personal_store");
+
+db.products.drop();
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Lenovo Yoga",
+    price: 900,
+  },
+  {
+    _id: 2,
+    name: "Lenovo IdeaPad",
+    price: 420,
+  },
+  {
+    _id: 1,
+    name: "Lenovo ThinkPad X1",
+    price: 700,
+  },
+  {
+    _id: 4,
+    name: "Dell Inspiron",
+    price: 650,
+  },
+  {
+    name: "Dell XPS 13",
+    price: 1929,
+  },
+]);
+
+db.products.find();
