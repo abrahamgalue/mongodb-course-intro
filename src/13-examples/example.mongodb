@@ -1,0 +1,12 @@
+use("personal_store");
+
+db.iot.updateMany(
+  // filter
+  { sensor: "A001" },
+  // update => aggregations pipeline
+  {
+    $pull: {
+      readings: { $gte: 3 },
+    },
+  },
+);
